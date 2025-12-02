@@ -1,0 +1,69 @@
+<View>
+<Header value="Please read the post below and annotate the labels accordingly" size="4"/>
+<Text name="Text" value="$Text" style="display:none;"/>
+  <Header value="Sentiment"/>
+  <Choices name="sentiment" toName="Text" choice="single" required="true" showInline="true">
+    <Choice value="Positive[1]"/>
+    <Choice value="Negative[2]"/>
+    <Choice value="Neutral[3]"/>
+    <Choice value="Mixed[4]"/>
+  </Choices>
+  <Header value="Emotion"/>
+  <Choices name="emotion" toName="Text" choice="multiple" required="true" showInline="true">
+    <Choice value="Anxiety[1]"/>
+    <Choice value="Fear[2]"/>
+    <Choice value="Stress/Overwhelm[3]"/>
+    <Choice value="Sadness[4]"/>
+    <Choice value="Anger/Frustration[5]"/>
+    <Choice value="Joy[6]"/>
+    <Choice value="Calm[7]"/>
+    <Choice value="Confusion/Uncertainty[8]"/>
+    <Choice value="None[9]"/>
+  </Choices>
+  <Header value="Theme"/>
+  <Choices name="theme" toName="Text" choice="multiple" required="false" showInline="true">
+    <Choice value="Mental Health[1]"/>
+    <Choice value="Personal life/Relationships[2]"/>
+    <Choice value="Education/School[3]"/>
+    <Choice value="Work/Employment[4]"/>
+    <Choice value="Physical Health[5]"/>
+    <Choice value="Social Interactions[6]"/>
+    <Choice value="motivation/encouragement[7]"/>
+    <Choice value="Daily activities/Routines[8]"/>
+    <Choice value="Other[9]"/>
+  </Choices>
+  <Header value="Linguistic features"/>
+  <Choices name="linguistic" toName="Text" choice="multiple" required="false" showInline="true">
+    <Choice value="First-person pronouns[1]"/>
+    <Choice value="Hedges/Uncertainty markers[2]"/>
+    <Choice value="Intensifiers[3]"/>
+    <Choice value="Emotion words[4]"/>
+    <Choice value="Discourse markers/Fillers[5]"/>
+    <Choice value="Repetition/Elongation[6]"/>
+    <Choice value="Code-switching[7]"/>
+    <Choice value="None[8]"/>
+  </Choices>
+  <Header value="Toxicity Level"/>
+  <Choices name="toxicity" toName="Text" choice="single" required="false" showInline="true">
+    <Choice value="None[1]"/>
+    <Choice value="Mild[2]"/>
+    <Choice value="Severe[3]"/>
+    <Choice value="Self-harm risk[4]"/>
+  </Choices>
+  <Header value="Intent"/>
+  <Choices name="intent" toName="Text" choice="multiple" required="false" showInline="true">
+    <Choice value="Venting/Emotional release[1]"/>
+    <Choice value="Seeking help/Advice[2]"/>
+    <Choice value="Sharing Experience/story[3]"/>
+    <Choice value="Social Interaction[4]"/>
+    <Choice value="Humor/Sarcasm[5]"/>
+    <Choice value="motivational/encouragement[6]"/>
+    <Choice value="iInformational/Factual[7]"/>
+    <Choice value="Other[8]"/>
+  </Choices>
+  <Header value="Possible Anxiety?"/>
+  <Choices name="anxiety_label" toName="Text" choice="single" required="true" showInline="true">
+    <Choice value="With possible anxiety"/>
+    <Choice value="No anxiety"/>
+  </Choices>
+</View>
